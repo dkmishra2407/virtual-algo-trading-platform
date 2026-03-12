@@ -32,7 +32,7 @@ def run_backtest(params):
     final_value = cerebro.broker.getvalue()
 
     strategy = result[0]
-
+    cerebro.plot()
     return {
         "final_portfolio_value":final_value,
         "trade_log":strategy.trade_log
